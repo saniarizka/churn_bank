@@ -50,7 +50,7 @@ summary(model_log)
 predictions <- predict(model_log, newdata = test_data1, type = "response")
 
 # Menentukan threshold
-threshold <- 0.05
+threshold <- 0.5
 predicted_class <- ifelse(predictions > threshold, 1, 0)
 
 # Membuat confusion matrix
